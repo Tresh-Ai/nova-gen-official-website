@@ -28,3 +28,17 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Content accuracy
+
+Publish only events, dates, partners, and team roles the community owner has confirmed; label
+partnership items as areas Nova Gen is open to, never as programmes already running. Why: the
+website brief forbids invented events, dates, or existing-programme claims.
+
+## Site structure
+
+Keep all site copy, nav, and asset URLs in `src/content/nova-gen.ts`, page components in
+`src/components/site`, and one thin route file per path in `src/routes`; the shared header and
+footer render from `src/routes/__root.tsx` through `SiteLayout`. Why: copy and branding stay
+editable in one place instead of being duplicated across pages.
+

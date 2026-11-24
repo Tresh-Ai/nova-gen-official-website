@@ -10,33 +10,116 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as CommunityRouteImport } from './routes/community'
+import { Route as EventsRouteImport } from './routes/events'
+import { Route as JoinRouteImport } from './routes/join'
+import { Route as PartnershipsRouteImport } from './routes/partnerships'
+import { Route as InitiativesBiWeeklyChallengeRouteImport } from './routes/initiatives/bi-weekly-challenge'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CommunityRoute = CommunityRouteImport.update({
+  id: '/community',
+  path: '/community',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const EventsRoute = EventsRouteImport.update({
+  id: '/events',
+  path: '/events',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const JoinRoute = JoinRouteImport.update({
+  id: '/join',
+  path: '/join',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PartnershipsRoute = PartnershipsRouteImport.update({
+  id: '/partnerships',
+  path: '/partnerships',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InitiativesBiWeeklyChallengeRoute =
+  InitiativesBiWeeklyChallengeRouteImport.update({
+    id: '/initiatives/bi-weekly-challenge',
+    path: '/initiatives/bi-weekly-challenge',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/community': typeof CommunityRoute
+  '/events': typeof EventsRoute
+  '/join': typeof JoinRoute
+  '/partnerships': typeof PartnershipsRoute
+  '/initiatives/bi-weekly-challenge': typeof InitiativesBiWeeklyChallengeRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/community': typeof CommunityRoute
+  '/events': typeof EventsRoute
+  '/join': typeof JoinRoute
+  '/partnerships': typeof PartnershipsRoute
+  '/initiatives/bi-weekly-challenge': typeof InitiativesBiWeeklyChallengeRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/community': typeof CommunityRoute
+  '/events': typeof EventsRoute
+  '/join': typeof JoinRoute
+  '/partnerships': typeof PartnershipsRoute
+  '/initiatives/bi-weekly-challenge': typeof InitiativesBiWeeklyChallengeRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/community'
+    | '/events'
+    | '/join'
+    | '/partnerships'
+    | '/initiatives/bi-weekly-challenge'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/about'
+    | '/community'
+    | '/events'
+    | '/join'
+    | '/partnerships'
+    | '/initiatives/bi-weekly-challenge'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/community'
+    | '/events'
+    | '/join'
+    | '/partnerships'
+    | '/initiatives/bi-weekly-challenge'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  CommunityRoute: typeof CommunityRoute
+  EventsRoute: typeof EventsRoute
+  JoinRoute: typeof JoinRoute
+  PartnershipsRoute: typeof PartnershipsRoute
+  InitiativesBiWeeklyChallengeRoute: typeof InitiativesBiWeeklyChallengeRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +131,59 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/community': {
+      id: '/community'
+      path: '/community'
+      fullPath: '/community'
+      preLoaderRoute: typeof CommunityRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/events': {
+      id: '/events'
+      path: '/events'
+      fullPath: '/events'
+      preLoaderRoute: typeof EventsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/join': {
+      id: '/join'
+      path: '/join'
+      fullPath: '/join'
+      preLoaderRoute: typeof JoinRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/partnerships': {
+      id: '/partnerships'
+      path: '/partnerships'
+      fullPath: '/partnerships'
+      preLoaderRoute: typeof PartnershipsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/initiatives/bi-weekly-challenge': {
+      id: '/initiatives/bi-weekly-challenge'
+      path: '/initiatives/bi-weekly-challenge'
+      fullPath: '/initiatives/bi-weekly-challenge'
+      preLoaderRoute: typeof InitiativesBiWeeklyChallengeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  CommunityRoute: CommunityRoute,
+  EventsRoute: EventsRoute,
+  JoinRoute: JoinRoute,
+  PartnershipsRoute: PartnershipsRoute,
+  InitiativesBiWeeklyChallengeRoute: InitiativesBiWeeklyChallengeRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
