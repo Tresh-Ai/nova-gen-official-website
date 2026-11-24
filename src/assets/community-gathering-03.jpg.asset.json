@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "08c2cc37-cf2c-4c54-bf6f-622ba1462cf8",
-  "project_id": "2853652d-802b-4b7a-9d56-347d16034cbe",
-  "url": "/__l5e/assets-v1/08c2cc37-cf2c-4c54-bf6f-622ba1462cf8/community-gathering-03.jpg",
-  "r2_key": "a/v1/2853652d-802b-4b7a-9d56-347d16034cbe/08c2cc37-cf2c-4c54-bf6f-622ba1462cf8/community-gathering-03.jpg",
-  "original_filename": "community-gathering-03.jpg",
-  "size": 97973,
   "content_type": "image/jpeg",
-  "created_at": "2026-11-24T10:27:10Z"
+  "created_at": "2026-11-24T10:27:10Z",
+  "original_filename": "community-gathering-03.jpg",
+  "project_id": "eb2370e4-6b6d-425e-aafe-cc02910c141a",
+  "r2_key": "a/v1/eb2370e4-6b6d-425e-aafe-cc02910c141a/08c2cc37-cf2c-4c54-bf6f-622ba1462cf8/community-gathering-03.jpg",
+  "size": 97973,
+  "url": "/__l5e/assets-v1/08c2cc37-cf2c-4c54-bf6f-622ba1462cf8/community-gathering-03.jpg",
+  "version": 1
 }
