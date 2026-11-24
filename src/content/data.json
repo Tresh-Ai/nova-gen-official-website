@@ -1,0 +1,623 @@
+{
+  "site": {
+    "name": "Nova Gen",
+    "shortName": "NovaGen",
+    "claim": "A self-driven African technology community.",
+    "description": "Nova Gen is a self-driven African technology community where members build, review, and grow together through bi-weekly challenges, project reviews, and shared opportunities.",
+    "applicationUrl": "https://tally.so/r/xVJBLr",
+    "xUrl": "https://x.com/NovaGenHQ",
+    "xHandle": "@NovaGenHQ",
+    "whatsapp": "@NovaGen Whatsapp Community",
+    "year": 2026
+  },
+  "images": {
+    "logo": "/__l5e/assets-v1/6f3dad5c-67da-46bf-ba8e-62645c29e07d/novagen-mark.jpeg",
+    "community": [
+      {
+        "src": "/__l5e/assets-v1/db88887d-7bd7-4dee-bf1e-e36e297f5393/community-event-04.jpg",
+        "alt": "Nova Gen members with lanyards and community totes at an expo booth",
+        "wide": true
+      },
+      {
+        "src": "/__l5e/assets-v1/726c47c7-035a-4850-8d81-a2ab08e4c587/community-event-05.jpg",
+        "alt": "Nova Gen members in front of the AWS Student Builder Group backdrop at Lagos State University",
+        "wide": true
+      },
+      {
+        "src": "/__l5e/assets-v1/75e5461c-9031-4686-b23f-1bb2d6d5b87f/community-gathering-01.jpg",
+        "alt": "Five members at a web3 milestone session called 20 Years of Bringing Africa On-Chain",
+        "wide": false
+      },
+      {
+        "src": "/__l5e/assets-v1/340efc61-ee78-4d18-82f9-e0cdd69f1272/community-gathering-02.jpg",
+        "alt": "Nova Gen members sharing community flyers between sessions",
+        "wide": false
+      },
+      {
+        "src": "/__l5e/assets-v1/08c2cc37-cf2c-4c54-bf6f-622ba1462cf8/community-gathering-03.jpg",
+        "alt": "Nova Gen members in front of an adoption timeline banner",
+        "wide": false
+      }
+    ]
+  },
+  "navigation": [
+    { "label": "About", "to": "/about" },
+    { "label": "Community", "to": "/community" },
+    { "label": "Challenge", "to": "/initiatives/bi-weekly-challenge" },
+    { "label": "Events", "to": "/events" },
+    { "label": "Partnerships", "to": "/partnerships" }
+  ],
+  "disciplines": [
+    "Developers",
+    "UI/UX Designers",
+    "Product Thinkers",
+    "Data Analysts",
+    "AI/ML Builders",
+    "No-Code Creators",
+    "Founders",
+    "Creatives"
+  ],
+  "philosophy": {
+    "quote": "We provide the structure. The members create the activity.",
+    "note": "Nova Gen is a working community where members build, share progress, review one another's work, and pass opportunities along."
+  },
+  "principles": [
+    {
+      "index": "01",
+      "title": "Growth Through Community",
+      "body": "Members learn by building alongside one another and sharing what they learn."
+    },
+    {
+      "index": "02",
+      "title": "Collaboration Over Isolation",
+      "body": "Members ask for feedback, review one another's work, and find people to build with."
+    },
+    {
+      "index": "03",
+      "title": "Opportunities Through Connection",
+      "body": "Jobs, leads, events, and collaborations move through the community."
+    }
+  ],
+  "ecosystem": [
+    {
+      "title": "Bi-Weekly Challenges",
+      "body": "A new brief gives members a shared project to build and review every two weeks."
+    },
+    {
+      "title": "Project Reviews",
+      "body": "Members share work in progress and get useful feedback from the community."
+    },
+    {
+      "title": "Jobs & Opportunities",
+      "body": "Members share roles, internships, contracts, and useful leads."
+    },
+    {
+      "title": "Events & Resources",
+      "body": "Sessions, workshops, and resources help members keep learning."
+    },
+    {
+      "title": "Community Connections",
+      "body": "Introductions and shared interests help members find people to build with."
+    },
+    {
+      "title": "Collaboration & Building",
+      "body": "Members work together on products, prototypes, and creative projects."
+    }
+  ],
+  "channels": [
+    {
+      "name": "General Chat",
+      "body": "Introductions, questions, and everyday community conversation."
+    },
+    {
+      "name": "Jobs & Leads",
+      "body": "Roles, contracts, and useful leads shared by members."
+    },
+    {
+      "name": "Events & Resources",
+      "body": "Upcoming sessions and useful resources in one place."
+    },
+    {
+      "name": "Announcements",
+      "body": "Updates from the community team, including challenge briefs and deadlines."
+    },
+    {
+      "name": "Content Creators",
+      "body": "Writers, designers, and video makers share the community's work."
+    },
+    {
+      "name": "Project Reviews",
+      "body": "Share work in progress and receive feedback from other members."
+    }
+  ],
+  "values": [
+    {
+      "title": "Intentionality",
+      "body": "Members choose what they work on and show up for it."
+    },
+    {
+      "title": "Access",
+      "body": "Opportunity should not depend on which room you already got into."
+    },
+    {
+      "title": "Excellence",
+      "body": "Thoughtful review helps members improve their work."
+    },
+    {
+      "title": "Community",
+      "body": "The group's progress matters more than any single member's highlight."
+    },
+    {
+      "title": "Curiosity",
+      "body": "Questions are welcome at every level."
+    },
+    {
+      "title": "Authenticity",
+      "body": "Members share real work, honest gaps, and steady progress."
+    },
+    {
+      "title": "Global Mindset",
+      "body": "African by origin, building for a global stage."
+    },
+    {
+      "title": "Reciprocity",
+      "body": "Members give back to the next person what they learn here."
+    }
+  ],
+  "team": [
+    {
+      "name": "Tomiwa Sanni",
+      "role": "Founder & Community Lead",
+      "body": "Sets the direction of Nova Gen and leads the community.",
+      "image": null
+    },
+    {
+      "name": "Angel Batubo",
+      "role": "Second Community Lead",
+      "body": "Leads community work alongside the founder.",
+      "image": null
+    },
+    {
+      "name": "Awoyale Olamilekan (Laycon)",
+      "role": "Community Manager",
+      "body": "Manages the day-to-day life of the community spaces.",
+      "image": null
+    },
+    {
+      "name": "Valian Sajoh",
+      "role": "Community Moderator",
+      "body": "Helps keep discussions useful and members supported.",
+      "image": null
+    },
+    {
+      "name": "Sunday Esther (Essy)",
+      "role": "Community Moderator",
+      "body": "Helps keep discussions useful and members supported.",
+      "image": null
+    }
+  ],
+  "challenge": {
+    "cadence": "Every two weeks",
+    "steps": [
+      {
+        "day": "Monday",
+        "title": "The challenge is posted",
+        "body": "A new challenge brief is shared in the community. Members post what they plan to build."
+      },
+      {
+        "day": "During the week",
+        "title": "Share progress and get reviews",
+        "body": "Members share updates in the group, ask for reviews, and get feedback from other builders."
+      },
+      {
+        "day": "Before Saturday",
+        "title": "Make improvements",
+        "body": "Use the feedback to make corrections and prepare the final submission."
+      },
+      {
+        "day": "Saturday",
+        "title": "Submit the finished work",
+        "body": "Members submit their final work to the community."
+      },
+      {
+        "day": "After submission",
+        "title": "Share the work on X",
+        "body": "The community comes together to share the work on the Nova Gen X account."
+      }
+    ],
+    "entries": [],
+    "archiveTitle": "Challenge archive",
+    "archiveIntro": "Current and past briefs are listed here. Open a challenge to read its details.",
+    "emptyTitle": "No challenges listed yet",
+    "emptyBody": "When a challenge is ready, it will be added here. The challenge rhythm stays the same every two weeks.",
+    "statusOpen": "Open now",
+    "statusArchived": "Archived",
+    "detailLabels": {
+      "brief": "Challenge brief",
+      "deliverables": "What to submit",
+      "submission": "Submission link",
+      "close": "Close details"
+    }
+  },
+  "events": {
+    "formats": [
+      {
+        "title": "Online conferences and workshops",
+        "body": "Online gatherings, talks, and practical sessions."
+      },
+      {
+        "title": "In-person meetups and hangouts",
+        "body": "Community meetups, campus visits, and events in person."
+      }
+    ],
+    "past": [
+      {
+        "title": "ARISE",
+        "format": "Online conference",
+        "description": "Nova Gen collaborated with Honest on an online conference for ARISE.",
+        "partner": "Honest",
+        "image": null
+      }
+    ]
+  },
+  "partnerships": {
+    "areas": [
+      {
+        "title": "Sessions and workshops",
+        "body": "Host a session, workshop, or practical clinic for members."
+      },
+      {
+        "title": "Challenge sponsorship",
+        "body": "Set a brief for a bi-weekly challenge and offer feedback to participants."
+      },
+      {
+        "title": "Talent and opportunities",
+        "body": "Share roles, internships, and contracts with the community."
+      },
+      {
+        "title": "Events and community activations",
+        "body": "Plan an event or activation with Nova Gen members."
+      },
+      {
+        "title": "Creator campaigns",
+        "body": "Work with community content creators on campaigns and ambassador programmes."
+      },
+      {
+        "title": "Campus ambassadors",
+        "body": "Explore campus ambassador activities with students in the community."
+      }
+    ],
+    "note": "These are areas Nova Gen is open to exploring with partners. They are not programmes already in place.",
+    "pastTitle": "Previous collaborations"
+  },
+  "join": {
+    "body": "Apply to join Nova Gen and tell us what you work on and what you want to learn.",
+    "steps": [
+      {
+        "title": "Apply",
+        "body": "Tell the team what you build, where you are, and what you want next."
+      },
+      {
+        "title": "Application review",
+        "body": "The community team reads your application and replies."
+      },
+      {
+        "title": "Join the spaces",
+        "body": "Once accepted, you can join the community channels and take part."
+      }
+    ]
+  },
+  "pages": {
+    "home": {
+      "meta": {
+        "title": "Nova Gen | African technology community",
+        "description": "A self-driven African technology community where members build, review one another's work, and share opportunities.",
+        "ogTitle": "Nova Gen | The Next Generation Starts Here",
+        "ogDescription": "African technologists build, review, and grow together at Nova Gen."
+      },
+      "hero": {
+        "eyebrow": "A community for people building with technology",
+        "titleFirst": "The Next Generation",
+        "titleSecond": "Starts",
+        "titleAccent": "Here.",
+        "body": "Nova Gen brings African technologists together to build, share progress, review work, and find opportunities.",
+        "primaryAction": "Join the community",
+        "secondaryAction": "Discover Nova Gen",
+        "imageAlt": "Nova Gen members at an expo"
+      },
+      "sections": {
+        "principles": {
+          "eyebrow": "How we work",
+          "title": "Built around people doing the work",
+          "intro": "Members learn by building, sharing progress, and helping one another improve."
+        },
+        "ecosystem": {
+          "eyebrow": "The community",
+          "title": "Six ways to take part",
+          "intro": "Choose a place to start and take part at your own pace."
+        },
+        "challenge": {
+          "eyebrow": "Bi-weekly challenge",
+          "title": "A shared brief, every two weeks",
+          "body": "The challenge starts on Monday. Members share their ideas and progress, get reviews, submit on Saturday, and share the work through Nova Gen on X.",
+          "action": "See how the challenge works"
+        },
+        "moments": {
+          "eyebrow": "Community moments",
+          "title": "Members building together",
+          "intro": "A look at Nova Gen members showing up at community and technology events."
+        },
+        "values": {
+          "eyebrow": "Our values",
+          "title": "What guides the community"
+        },
+        "partnership": {
+          "eyebrow": "Partnerships",
+          "title": "Build something with Nova Gen",
+          "body": "Work with our community through events, creator campaigns, learning sessions, and opportunities.",
+          "action": "Explore partnership options"
+        },
+        "final": {
+          "title": "You do not have to build alone.",
+          "body": "Join a community where members share work, feedback, and opportunities.",
+          "primaryAction": "Apply to join",
+          "secondaryAction": "What joining looks like"
+        }
+      }
+    },
+    "about": {
+      "meta": {
+        "title": "About Nova Gen | Our community and team",
+        "description": "Meet the people behind Nova Gen and learn what the community is here to do.",
+        "ogTitle": "About Nova Gen",
+        "ogDescription": "The story, purpose, and people behind Nova Gen."
+      },
+      "hero": {
+        "eyebrow": "About Nova Gen",
+        "title": "A community built by the generation it names.",
+        "body": "Nova Gen is a self-driven African technology community. Members set the pace, the team keeps things moving, and the work speaks for itself.",
+        "action": "Apply to join"
+      },
+      "story": {
+        "eyebrow": "The name",
+        "title": "Two words, one intention",
+        "intro": "The name reflects a new generation of African technologists and the work they are doing.",
+        "items": [
+          {
+            "title": "Nova",
+            "body": "New ideas, tools, and people willing to try something different."
+          },
+          {
+            "title": "Gen",
+            "body": "The generation doing that work now: students, builders, designers, analysts, and founders across Africa."
+          }
+        ]
+      },
+      "mission": [
+        {
+          "title": "Mission",
+          "body": "Give African technologists a community where work is shared, reviewed, and connected to opportunity."
+        },
+        {
+          "title": "Vision",
+          "body": "A generation of African builders with the structure, feedback, and connections to make progress together."
+        }
+      ],
+      "team": {
+        "eyebrow": "The team",
+        "title": "People behind the community",
+        "intro": "The team supports members, community spaces, and shared work."
+      },
+      "next": {
+        "eyebrow": "What comes next",
+        "title": "Built with the community",
+        "intro": "Members continue to shape what Nova Gen does and how the community grows.",
+        "communityAction": "See the community spaces",
+        "challengeAction": "How the challenge works"
+      }
+    },
+    "community": {
+      "meta": {
+        "title": "Nova Gen Community | Spaces and ways to take part",
+        "description": "Explore Nova Gen's six community channels and the ways members share work, feedback, and opportunities.",
+        "ogTitle": "The Nova Gen community",
+        "ogDescription": "Six community spaces for conversation, work, feedback, and opportunities."
+      },
+      "hero": {
+        "eyebrow": "Community",
+        "title": "Six spaces. One working community.",
+        "body": "Conversation, challenges, project reviews, and opportunities all have a home in the community channels.",
+        "action": "Apply to join"
+      },
+      "channels": {
+        "eyebrow": "The spaces",
+        "title": "Where the community talks",
+        "intro": "Each channel has a clear purpose, so members can find the right conversation."
+      },
+      "participation": {
+        "eyebrow": "Participation",
+        "title": "How members take part",
+        "intro": "Three habits help keep the community useful.",
+        "items": [
+          {
+            "title": "Share your work",
+            "body": "Post what you are building, even while it is still in progress."
+          },
+          {
+            "title": "Review someone's work",
+            "body": "Share useful feedback when another member asks for a second look."
+          },
+          {
+            "title": "Keep conversations useful",
+            "body": "Help keep opportunities, questions, and feedback easy to find."
+          }
+        ]
+      },
+      "rhythm": {
+        "eyebrow": "How we work",
+        "title": "Build, share, review, repeat"
+      },
+      "callout": {
+        "eyebrow": "Join Nova Gen",
+        "title": "Find your place in the community",
+        "body": "Applications are open to people building or learning to build.",
+        "primaryAction": "Apply to join",
+        "secondaryAction": "Read the join page"
+      }
+    },
+    "challenge": {
+      "meta": {
+        "title": "Nova Gen Bi-Weekly Challenge | How it works",
+        "description": "Learn how Nova Gen's bi-weekly challenge works, from the Monday brief to peer reviews, Saturday submissions, and community sharing on X.",
+        "ogTitle": "How the Nova Gen bi-weekly challenge works",
+        "ogDescription": "A shared build cycle with a Monday brief, community reviews, Saturday submissions, and an X showcase."
+      },
+      "hero": {
+        "eyebrow": "Bi-weekly challenge",
+        "title": "A clear rhythm for building together.",
+        "body": "Every two weeks, a new brief gives members time to plan, build, share progress, get reviews, and submit finished work.",
+        "action": "Join Nova Gen"
+      },
+      "workflow": {
+        "eyebrow": "How it works",
+        "title": "From Monday's brief to Saturday's submission",
+        "intro": "Members build during the week, get feedback from one another, and share the final work through the Nova Gen X account."
+      },
+      "archive": {
+        "eyebrow": "Challenge list",
+        "title": "Challenge archive",
+        "intro": "Current and past briefs appear here. Open a challenge to read the details.",
+        "emptyTitle": "No challenges listed yet",
+        "emptyBody": "When a challenge is ready, it will be added here. The bi-weekly rhythm stays the same."
+      },
+      "callout": {
+        "title": "Take part in the next challenge",
+        "body": "Challenge briefs are shared with the community. Join to post your idea, share progress, and get feedback.",
+        "primaryAction": "Apply to join",
+        "secondaryAction": "See community events"
+      }
+    },
+    "events": {
+      "meta": {
+        "title": "Nova Gen Events | Conferences and meetups",
+        "description": "Browse Nova Gen conferences, workshops, meetups, and community event photos.",
+        "ogTitle": "Nova Gen events",
+        "ogDescription": "Online conferences, workshops, meetups, and community gatherings."
+      },
+      "hero": {
+        "eyebrow": "Events",
+        "title": "Conferences, workshops, and community meetups.",
+        "body": "Nova Gen members take part in online and in-person events across the technology community.",
+        "action": "Apply to join"
+      },
+      "formats": {
+        "eyebrow": "Event formats",
+        "title": "Ways the community gathers",
+        "intro": "Members meet online and in person."
+      },
+      "past": {
+        "eyebrow": "Past events",
+        "title": "Events Nova Gen has taken part in",
+        "intro": "A growing list of conferences, workshops, and community events."
+      },
+      "moments": {
+        "eyebrow": "Community photos",
+        "title": "Photos from community events",
+        "intro": "Moments from events and gatherings attended by Nova Gen members."
+      },
+      "callout": {
+        "title": "Plan an event with Nova Gen",
+        "body": "Connect with the team about a conference, workshop, or community meetup.",
+        "partnershipAction": "Partnership options",
+        "messageAction": "Message Nova Gen"
+      }
+    },
+    "partnerships": {
+      "meta": {
+        "title": "Partner with Nova Gen | Collaboration opportunities",
+        "description": "Explore ways to work with Nova Gen through workshops, opportunities, campus ambassadors, and creator campaigns.",
+        "ogTitle": "Partner with Nova Gen",
+        "ogDescription": "Explore collaboration opportunities with Nova Gen's African technology community."
+      },
+      "hero": {
+        "eyebrow": "Partnerships",
+        "title": "Work with African technology builders.",
+        "body": "Connect with Nova Gen through our community, creator network, campus reach, events, and learning opportunities.",
+        "action": "Start a conversation"
+      },
+      "areas": {
+        "eyebrow": "Ways to work together",
+        "title": "Partnership opportunities",
+        "intro": "These are areas Nova Gen is open to exploring with partners. They are not programmes already in place."
+      },
+      "past": {
+        "eyebrow": "Previous work",
+        "title": "Previous collaborations"
+      },
+      "callout": {
+        "title": "Tell us what you have in mind",
+        "body": "Share your idea for a workshop, campaign, campus activation, event, or another collaboration.",
+        "primaryAction": "Message Nova Gen on X",
+        "secondaryAction": "See community events"
+      }
+    },
+    "join": {
+      "meta": {
+        "title": "Join Nova Gen | Apply to the community",
+        "description": "Apply to join Nova Gen, a self-driven African technology community for people who build and learn together.",
+        "ogTitle": "Join Nova Gen",
+        "ogDescription": "Tell us what you build and what you want to learn next."
+      },
+      "hero": {
+        "eyebrow": "Join Nova Gen",
+        "title": "Apply to join the community.",
+        "body": "Apply to join Nova Gen and tell us what you work on and what you want to learn.",
+        "action": "Open the application form"
+      },
+      "steps": {
+        "eyebrow": "What happens",
+        "title": "Three steps from application to the community",
+        "intro": "The team reviews each application and replies."
+      },
+      "form": {
+        "eyebrow": "The application",
+        "title": "Tell us what you build and what you want next",
+        "body": "The form asks what you work on, where you are, and what you would like to learn.",
+        "action": "Apply on the form",
+        "opensLabel": "Opens in a new tab"
+      },
+      "channels": {
+        "eyebrow": "After you join",
+        "intro": "You can take part in these community spaces."
+      },
+      "audience": {
+        "eyebrow": "Who it is for",
+        "title": "Builders, learners, and people with work to show",
+        "intro": "Developers, designers, product people, analysts, AI/ML builders, no-code creators, founders, and creatives."
+      },
+      "next": {
+        "title": "Want to learn more first?",
+        "body": "Read how the community works, learn about the challenge, or see photos from events.",
+        "communityAction": "Community spaces",
+        "challengeAction": "The bi-weekly challenge",
+        "applyAction": "Apply now"
+      }
+    },
+    "shared": {
+      "joinAction": "Join Nova Gen",
+      "applyAction": "Apply to join",
+      "footerNavigate": "Navigate",
+      "footerConnect": "Connect",
+      "footerCommunity": "Community",
+      "footerChallenge": "Bi-weekly challenges",
+      "footerCopyright": "All rights reserved.",
+      "footerTagline": "Built by the community",
+      "notFoundTitle": "Page not found",
+      "notFoundBody": "The page you are looking for does not exist or may have moved.",
+      "notFoundAction": "Go home",
+      "errorTitle": "This page did not load",
+      "errorBody": "Something went wrong. Try again or return to the home page.",
+      "retryAction": "Try again"
+    }
+  }
+}
