@@ -15,7 +15,7 @@ export function Wordmark({ className }: { className?: string }) {
       <img
         src={LOGO}
         alt="Nova Gen emblem"
-        className="h-9 w-9 rounded-md object-cover ring-1 ring-line transition group-hover:ring-primary/50"
+        className="h-9 w-9 rounded-sm object-cover transition group-hover:opacity-80"
       />
       <span className="font-display text-lg font-semibold tracking-tight text-foreground">
         Nova<span className="text-primary">Gen</span>
@@ -49,7 +49,7 @@ export function SiteHeader() {
             href={SITE.tallyUrl}
             target="_blank"
             rel="noreferrer"
-            className="hidden items-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground transition hover:brightness-110 sm:inline-flex"
+            className="hidden items-center gap-2 rounded-sm bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground transition hover:brightness-110 sm:inline-flex"
           >
             Join Nova Gen
             <ArrowUpRight className="h-4 w-4" />
@@ -83,7 +83,7 @@ export function SiteHeader() {
               href={SITE.tallyUrl}
               target="_blank"
               rel="noreferrer"
-              className="mt-3 mb-1 inline-flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground"
+              className="mt-3 mb-1 inline-flex items-center gap-2 rounded-sm bg-primary px-4 py-2 text-sm font-semibold text-primary-foreground"
             >
               Join Nova Gen
               <ArrowUpRight className="h-4 w-4" />
@@ -132,7 +132,7 @@ export function SiteFooter() {
                 rel="noreferrer"
                 className="text-dim transition-colors hover:text-primary"
               >
-                X — {SITE.xHandle}
+                X · {SITE.xHandle}
               </a>
             </li>
             <li>
@@ -152,7 +152,7 @@ export function SiteFooter() {
           <p className="eyebrow">Community</p>
           <ul className="mt-4 space-y-2 text-sm text-dim">
             <li>{CHANNELS.length} community spaces</li>
-            <li>Bi-weekly challenges — next deadline {CHALLENGE.deadline}</li>
+            <li>Bi-weekly challenges · next deadline {CHALLENGE.cadence}</li>
             <li>{PARTNERSHIPS.lead.title}</li>
             <li className="font-mono text-[0.68rem] tracking-widest uppercase">{SITE.whatsapp}</li>
           </ul>

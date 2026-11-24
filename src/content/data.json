@@ -11,30 +11,30 @@
     "year": 2026
   },
   "images": {
-    "logo": "/__l5e/assets-v1/6f3dad5c-67da-46bf-ba8e-62645c29e07d/novagen-mark.jpeg",
+    "logo": "/images/novagen-mark.jpeg",
     "community": [
       {
-        "src": "/__l5e/assets-v1/db88887d-7bd7-4dee-bf1e-e36e297f5393/community-event-04.jpg",
+        "src": "/images/community-event-04.jpg",
         "alt": "Nova Gen members with lanyards and community totes at an expo booth",
         "wide": true
       },
       {
-        "src": "/__l5e/assets-v1/726c47c7-035a-4850-8d81-a2ab08e4c587/community-event-05.jpg",
+        "src": "/images/community-event-05.jpg",
         "alt": "Nova Gen members in front of the AWS Student Builder Group backdrop at Lagos State University",
         "wide": true
       },
       {
-        "src": "/__l5e/assets-v1/75e5461c-9031-4686-b23f-1bb2d6d5b87f/community-gathering-01.jpg",
+        "src": "/images/community-gathering-01.jpg",
         "alt": "Five members at a web3 milestone session called 20 Years of Bringing Africa On-Chain",
         "wide": false
       },
       {
-        "src": "/__l5e/assets-v1/340efc61-ee78-4d18-82f9-e0cdd69f1272/community-gathering-02.jpg",
+        "src": "/images/community-gathering-02.jpg",
         "alt": "Nova Gen members sharing community flyers between sessions",
         "wide": false
       },
       {
-        "src": "/__l5e/assets-v1/08c2cc37-cf2c-4c54-bf6f-622ba1462cf8/community-gathering-03.jpg",
+        "src": "/images/community-gathering-03.jpg",
         "alt": "Nova Gen members in front of an adoption timeline banner",
         "wide": false
       }

@@ -3,16 +3,14 @@
  * Browser-safe: no server-only imports, no process.env.
  */
 
-const ASSET = "/__l5e/assets-v1";
+export const LOGO = "/images/novagen-mark.jpeg";
+export const CHALLENGE_ART = "/images/challenge-task-03-04.png";
 
-export const LOGO = `${ASSET}/6f3dad5c-67da-46bf-ba8e-62645c29e07d/novagen-mark.jpeg`;
-export const CHALLENGE_ART = `${ASSET}/cbe37224-365e-4e6f-9910-87c00236339b/challenge-task-03-04.png`;
-
-const GATHERING_01 = `${ASSET}/75e5461c-9031-4686-b23f-1bb2d6d5b87f/community-gathering-01.jpg`;
-const GATHERING_02 = `${ASSET}/340efc61-ee78-4d18-82f9-e0cdd69f1272/community-gathering-02.jpg`;
-const GATHERING_03 = `${ASSET}/08c2cc37-cf2c-4c54-bf6f-622ba1462cf8/community-gathering-03.jpg`;
-const EVENT_04 = `${ASSET}/db88887d-7bd7-4dee-bf1e-e36e297f5393/community-event-04.jpg`;
-const EVENT_05 = `${ASSET}/726c47c7-035a-4850-8d81-a2ab08e4c587/community-event-05.jpg`;
+const GATHERING_01 = "/images/community-gathering-01.jpg";
+const GATHERING_02 = "/images/community-gathering-02.jpg";
+const GATHERING_03 = "/images/community-gathering-03.jpg";
+const EVENT_04 = "/images/community-event-04.jpg";
+const EVENT_05 = "/images/community-event-05.jpg";
 
 export const SITE = {
   name: "Nova Gen",
@@ -114,10 +112,6 @@ export const CHANNELS = [
     body: "Official updates from the community team: challenges, deadlines, and changes.",
   },
   {
-    name: "Innovation Team",
-    body: "Where members push new ideas forward and shape what the community runs next.",
-  },
-  {
     name: "Content Creators",
     body: "Writers, designers, and video makers documenting what the community builds.",
   },
@@ -177,7 +171,7 @@ export const MOMENTS = [
   },
   {
     src: GATHERING_01,
-    caption: "Five members at a web3 milestone session — “20 Years of Bringing Africa On-Chain”.",
+    caption: "Five members at a web3 milestone session, 20 Years of Bringing Africa On-Chain.",
     meta: "On the floor",
     wide: false,
   },
@@ -225,63 +219,88 @@ export const TEAM = [
 
 export const CHALLENGE = {
   code: "Task 03-04",
-  title: "Farm to Future — The Scenario",
-  deadline: "Saturday 14th Nov 2026",
-  where: SITE.whatsapp,
-  summary:
-    "A scenario-based challenge on the agriculture value chain: members work the problem from farm to market and submit a solution built for the real constraints of the chain.",
+  cadence: "Every two weeks",
+  heroTitle: "A clear rhythm for building together.",
+  heroBody:
+    "Every two weeks, a new brief gives members time to plan, build, share progress, get reviews, and submit finished work.",
   steps: [
     {
-      title: "The task is posted",
-      body: "A scoped scenario is published to the community with the brief and the deadline.",
+      day: "Monday",
+      title: "The challenge is posted",
+      body: "A new challenge brief is shared in the community. Members post what they plan to build.",
     },
     {
-      title: "Members build",
-      body: "Work alone or in pairs, using the community spaces to unblock fast.",
+      day: "During the week",
+      title: "Share progress and get reviews",
+      body: "Members share updates in the group, ask for reviews, and get feedback from other builders.",
     },
     {
-      title: "Submissions open",
-      body: "Members submit their entry through the community before the deadline.",
+      day: "Before Saturday",
+      title: "Make improvements",
+      body: "Use the feedback to make corrections and prepare the final submission.",
     },
     {
-      title: "Review and feedback",
-      body: "Entries are reviewed in the open, so the learning is shared, not private.",
+      day: "Saturday",
+      title: "Submit the finished work",
+      body: "Members submit their final work to the community.",
+    },
+    {
+      day: "After submission",
+      title: "Share the work on X",
+      body: "The community comes together to share the work on the Nova Gen X account.",
     },
   ],
-  archive: [
-    { code: "Task 03-04", title: "Farm to Future — The Scenario", status: "Open" },
-  ],
+  entries: [],
+  archiveTitle: "Challenge archive",
+  archiveIntro:
+    "Current and past briefs are listed here. Open a challenge to read its details.",
+  emptyTitle: "No challenges listed yet",
+  emptyBody: "When a challenge is ready, it will be added here. The challenge rhythm stays the same every two weeks.",
+  detailLabels: {
+    brief: "Challenge brief",
+    deliverables: "What to submit",
+    submission: "Submission link",
+    close: "Close details",
+  },
 } as const;
 
 export const PARTNERSHIPS = {
-  lead: {
-    title: "ARISE × Harness",
-    body: "A collaboration with Harness delivered through ARISE, hosted by Nonye Victory, that brought a working session to the community.",
-  },
-  pillars: [
+  areas: [
     {
-      title: "Sessions & Workshops",
-      body: "Partners run a session, workshop, or clinic for members.",
+      title: "Sessions and workshops",
+      body: "Host a session, workshop, or practical clinic for members.",
     },
     {
-      title: "Challenge Sponsorship",
-      body: "Partners set a bi-weekly challenge and review the entries.",
+      title: "Challenge sponsorship",
+      body: "Set a brief for a bi-weekly challenge and offer feedback to participants.",
     },
     {
-      title: "Talent & Opportunities",
-      body: "Roles, internships, and contracts shared with the community first.",
+      title: "Talent and opportunities",
+      body: "Share roles, internships, and contracts with the community.",
     },
     {
-      title: "Events & Hackrooms",
-      body: "Joint events, build sprints, and on-campus or in-person days.",
+      title: "Events and community activations",
+      body: "Plan an event or activation with Nova Gen members.",
+    },
+    {
+      title: "Creator campaigns",
+      body: "Work with community content creators on campaigns and ambassador programmes.",
+    },
+    {
+      title: "Campus ambassadors",
+      body: "Explore campus ambassador activities with students in the community.",
     },
   ],
-  note: "These are areas Nova Gen is open to working with partners on. They are not programmes already in place.",
+  note: "These are areas Nova Gen is open to exploring with partners. They are not programmes already in place.",
+  lead: {
+    title: "Collaboration with Honest (ARISE)",
+    body: "Nova Gen collaborated with Honest on ARISE, an online conference for the community.",
+  },
 } as const;
 
 export const JOIN = {
   headline: "You don't have to build alone.",
-  body: "Apply to join Nova Gen. Tell us what you work on and what you want to get better at — the team reviews every application.",
+  body: "Apply to join Nova Gen. Tell us what you work on and what you want to get better at. The team reviews every application.",
   formUrl: SITE.tallyUrl,
   steps: [
     {
