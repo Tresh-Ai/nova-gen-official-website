@@ -7,7 +7,7 @@ import { PHILOSOPHY, SITE, TEAM } from "@/content/nova-gen";
 const STORY = [
   {
     title: "Nova",
-    body: "New. The part of the field that keeps moving — the tools, the ideas, and the people willing to try them first.",
+    body: "New. The part of the field that keeps moving: the tools, the ideas, and the people willing to try them first.",
   },
   {
     title: "Gen",
@@ -22,7 +22,7 @@ const MISSION = [
   },
   {
     title: "Vision",
-    body: "A generation of African builders who don't need permission — because the structure, the feedback, and the network already exist here.",
+    body: "A generation of African builders who don't need permission because the structure, the feedback, and the network already exist here.",
   },
 ];
 
@@ -83,27 +83,29 @@ export function AboutPage() {
         <div className="mx-auto max-w-6xl px-5 py-20">
           <SectionHeading
             eyebrow="The team"
-            title="Who keeps the community running"
-            intro="A small team holding the spaces, the challenges, and the reviews."
+            title="People behind the community"
+            intro="The team supports members, community spaces, and shared work."
           />
           <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {TEAM.map((member) => (
-              <div key={member.name} className="rounded-xl surface-card p-6">
+              <div key={member.name} className="rounded-xl surface-card overflow-hidden">
                 <div
                   aria-hidden
-                  className="flex h-11 w-11 items-center justify-center rounded-full bg-primary/15 font-display text-sm font-semibold text-primary"
+                  className="aspect-square w-full bg-primary/10 flex items-center justify-center"
                 >
-                  {member.name
-                    .split(" ")
-                    .slice(0, 2)
-                    .map((part) => part.charAt(0))
-                    .join("")}
+                  <span className="font-display text-4xl font-semibold text-primary">
+                    {member.name
+                      .split(" ")
+                      .slice(0, 2)
+                      .map((part) => part.charAt(0))
+                      .join("")}
+                  </span>
                 </div>
-                <h3 className="mt-5 text-base font-semibold text-foreground">{member.name}</h3>
-                <p className="font-mono text-[0.68rem] tracking-widest text-primary uppercase">
-                  {member.role}
-                </p>
-                <p className="mt-3 text-sm text-dim">{member.body}</p>
+                <div className="p-6">
+                  <h3 className="text-base font-semibold text-foreground">{member.name}</h3>
+                  <p className="mt-1 text-sm font-medium text-primary">{member.role}</p>
+                  <p className="mt-3 text-sm text-dim">{member.body}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -114,20 +116,20 @@ export function AboutPage() {
         <div className="mx-auto max-w-6xl px-5 py-20">
           <SectionHeading
             eyebrow="What comes next"
-            title="Where Nova Gen is heading"
-            intro="Outreach to more campuses, structured mentorship, and bootcamps built around what members actually need."
+            title="Built with the community"
+            intro="Members continue to shape what Nova Gen does and how the community grows."
           />
           <div className="mt-10 flex flex-wrap gap-3">
             <Link
               to="/community"
-              className="inline-flex items-center gap-2 rounded-full hairline px-5 py-2.5 text-sm text-foreground transition hover:border-primary/40 hover:text-primary"
+              className="inline-flex items-center gap-2 rounded-sm hairline px-5 py-2.5 text-sm text-foreground transition hover:border-primary/40 hover:text-primary"
             >
               See the community spaces
               <ArrowRight className="h-4 w-4" />
             </Link>
             <Link
               to="/initiatives/bi-weekly-challenge"
-              className="inline-flex items-center gap-2 rounded-full hairline px-5 py-2.5 text-sm text-foreground transition hover:border-primary/40 hover:text-primary"
+              className="inline-flex items-center gap-2 rounded-sm hairline px-5 py-2.5 text-sm text-foreground transition hover:border-primary/40 hover:text-primary"
             >
               The bi-weekly challenge
               <ArrowRight className="h-4 w-4" />
