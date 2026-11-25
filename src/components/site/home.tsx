@@ -17,14 +17,10 @@ import {
 
 function Hero() {
   return (
-    <section className="relative overflow-hidden border-b border-line">
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -top-52 left-1/3 h-[30rem] w-[60rem] rounded-full bg-primary/10 blur-[130px]"
-      />
-      <div className="relative mx-auto grid max-w-6xl gap-12 px-5 py-16 sm:py-24 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
+    <section className="border-b border-line">
+      <div className="mx-auto grid max-w-6xl gap-12 px-5 py-16 sm:py-24 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
         <div>
-          <p className="eyebrow rise">A community for people building with technology</p>
+          <p className="eyebrow rise">For African builders</p>
           <h1 className="mt-5 text-5xl leading-[0.95] font-semibold tracking-tight text-foreground sm:text-7xl">
             The Next Generation
             <br />
@@ -55,7 +51,7 @@ function Hero() {
         </div>
 
         <figure className="rise">
-          <div className="overflow-hidden rounded-2xl surface-card">
+          <div className="overflow-hidden rounded-md">
             <img
               src={MOMENTS[0]?.src}
               alt="Nova Gen members with lanyards and community totes at an expo booth"
@@ -102,9 +98,9 @@ function Principles() {
           title="Built around people doing the work"
           intro="Members learn by building, sharing progress, and helping one another improve."
         />
-        <div className="mt-12 grid gap-px overflow-hidden rounded-2xl hairline bg-line md:grid-cols-3">
+        <div className="mt-12 grid gap-8 md:grid-cols-3">
           {PRINCIPLES.map((item) => (
-            <div key={item.index} className="bg-surface p-8">
+            <div key={item.index} className="py-2">
               <span className="font-mono text-xs tracking-widest text-primary">{item.index}</span>
               <h3 className="mt-5 text-xl font-semibold text-foreground">{item.title}</h3>
               <p className="mt-3 text-sm text-dim">{item.body}</p>
@@ -125,20 +121,12 @@ function Ecosystem() {
           title="Six ways to take part"
           intro="Choose a place to start and take part at your own pace."
         />
-        <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {ECOSYSTEM.map((item, i) => (
-            <div
-              key={item.title}
-              className="group rounded-xl surface-card p-6 transition hover:border-primary/40"
-            >
-              <span className="font-mono text-[0.68rem] tracking-widest text-dim uppercase">
-                {String(i + 1).padStart(2, "0")}
-              </span>
-              <h3 className="mt-4 text-lg font-semibold text-foreground group-hover:text-primary">
-                {item.title}
-              </h3>
+        <div className="mt-12 grid gap-x-8 gap-y-2 sm:grid-cols-2 lg:grid-cols-3">
+          {ECOSYSTEM.map((item) => (
+            <article key={item.title} className="border-t border-line py-5">
+              <h3 className="text-lg font-semibold text-foreground">{item.title}</h3>
               <p className="mt-2 text-sm text-dim">{item.body}</p>
-            </div>
+            </article>
           ))}
         </div>
       </div>
@@ -150,7 +138,7 @@ function ChallengeSpotlight() {
   return (
     <section className="border-b border-line bg-surface">
       <div className="mx-auto max-w-6xl px-5 py-20">
-        <div className="grid gap-8 rounded-2xl surface-card p-8 lg:grid-cols-[1fr_1fr] lg:items-center lg:p-12">
+        <div className="grid gap-8 rounded-md bg-surface p-8 lg:grid-cols-[1fr_1fr] lg:items-center lg:p-12">
           <div>
             <p className="eyebrow">Bi-weekly challenge</p>
             <h2 className="mt-3 text-3xl font-semibold text-foreground sm:text-4xl">
@@ -168,20 +156,18 @@ function ChallengeSpotlight() {
               <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
-          <dl className="grid gap-px overflow-hidden rounded-xl hairline bg-line sm:grid-cols-2">
-            <div className="bg-background p-5">
+          <dl className="flex flex-col justify-center gap-5 border-l border-line pl-6">
+            <div>
               <dt className="font-mono text-[0.68rem] tracking-widest text-dim uppercase">
                 Cadence
               </dt>
               <dd className="mt-2 text-sm font-medium text-foreground">{CHALLENGE.cadence}</dd>
             </div>
-            <div className="bg-background p-5">
+            <div>
               <dt className="font-mono text-[0.68rem] tracking-widest text-dim uppercase">
-                Steps
+                Cycle
               </dt>
-              <dd className="mt-2 text-sm font-medium text-foreground">
-                {CHALLENGE.steps.length} stages each cycle
-              </dd>
+              <dd className="mt-2 text-sm font-medium text-foreground">Monday brief to Saturday submission</dd>
             </div>
           </dl>
         </div>
@@ -210,9 +196,9 @@ function Values() {
     <section className="border-b border-line">
       <div className="mx-auto max-w-6xl px-5 py-20">
         <SectionHeading eyebrow="Our values" title="What guides the community" />
-        <div className="mt-12 grid gap-px overflow-hidden rounded-2xl hairline bg-line sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-x-8 gap-y-7 sm:grid-cols-2 lg:grid-cols-4">
           {VALUES.map((item) => (
-            <div key={item.title} className="bg-surface p-6">
+            <div key={item.title} className="border-t border-line pt-4">
               <h3 className="text-base font-semibold text-foreground">{item.title}</h3>
               <p className="mt-2 text-sm text-dim">{item.body}</p>
             </div>
@@ -227,7 +213,7 @@ function Partnership() {
   return (
     <section className="border-b border-line">
       <div className="mx-auto max-w-6xl px-5 py-20">
-        <div className="grid gap-10 rounded-2xl surface-card p-8 lg:grid-cols-[1fr_1fr] lg:items-center lg:p-12">
+        <div className="grid gap-10 bg-surface p-8 lg:grid-cols-[1fr_1fr] lg:items-center lg:p-12">
           <div>
             <p className="eyebrow">Partnerships</p>
             <h2 className="mt-3 text-3xl font-semibold text-foreground">
@@ -247,7 +233,7 @@ function Partnership() {
           </div>
           <ul className="grid gap-3 sm:grid-cols-2">
             {PARTNERSHIPS.areas.slice(0, 4).map((pillar) => (
-              <li key={pillar.title} className="rounded-lg hairline bg-background p-4">
+              <li key={pillar.title} className="border-t border-line pt-4">
                 <p className="text-sm font-semibold text-foreground">{pillar.title}</p>
                 <p className="mt-1 text-xs text-dim">{pillar.body}</p>
               </li>
@@ -263,12 +249,8 @@ function FinalCall() {
   return (
     <section>
       <div className="mx-auto max-w-6xl px-5 py-20">
-        <div className="relative overflow-hidden rounded-3xl bg-primary p-10 sm:p-16">
-          <div
-            aria-hidden
-            className="pointer-events-none absolute -right-16 -bottom-24 h-72 w-72 rounded-full bg-background/20 blur-3xl"
-          />
-          <div className="relative">
+        <div className="bg-primary p-8 sm:p-14">
+          <div>
             <h2 className="max-w-2xl text-3xl leading-tight font-semibold text-primary-foreground sm:text-5xl">
               You do not have to build alone.
             </h2>

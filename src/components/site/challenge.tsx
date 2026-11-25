@@ -26,21 +26,20 @@ export function ChallengePage() {
       <section className="border-b border-line">
         <div className="mx-auto max-w-6xl px-5 py-20">
           <SectionHeading
-            eyebrow="How it works"
-            title="From Monday's brief to Saturday's submission"
-            intro="Members build during the week, get feedback from one another, and share the final work through the Nova Gen X account."
+            eyebrow="The rhythm"
+            title="How a challenge moves through the week"
+            intro="Each cycle starts with a Monday brief. Members build, share progress, and get peer feedback during the week, then submit on Saturday. The finished work is shared through Nova Gen on X."
           />
-          <ol className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
-            {CHALLENGE.steps.map((step, i) => (
-              <li key={step.title} className="rounded-xl surface-card p-6">
-                <span className="font-mono text-xs tracking-widest text-primary">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <p className="mt-3 font-mono text-[0.68rem] tracking-widest text-dim uppercase">
+          <ol className="mt-10 divide-y divide-line border-y border-line">
+            {CHALLENGE.steps.map((step) => (
+              <li key={step.title} className="grid gap-2 py-6 sm:grid-cols-[10rem_1fr] sm:gap-8">
+                <p className="font-mono text-xs text-primary uppercase">
                   {step.day}
                 </p>
-                <h3 className="mt-2 text-base font-semibold text-foreground">{step.title}</h3>
-                <p className="mt-2 text-sm text-dim">{step.body}</p>
+                <div>
+                  <h3 className="text-base font-semibold text-foreground">{step.title}</h3>
+                  <p className="mt-2 text-sm text-dim">{step.body}</p>
+                </div>
               </li>
             ))}
           </ol>
@@ -58,11 +57,13 @@ export function ChallengePage() {
             {CHALLENGE.entries.length > 0 ? (
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {CHALLENGE.entries.map((entry) => (
-                  <article key={entry.code} className="overflow-hidden rounded-xl hairline bg-background">
+                  <article key={entry.code} className="overflow-hidden rounded-md bg-background">
                     <img
                       src={entry.image}
-                      alt={`${entry.code} challenge artwork`}
-                      className="aspect-[16/9] w-full object-cover"
+                      alt={`${entry.code}: ${entry.title} challenge poster`}
+                      className="aspect-[3/2] w-full object-cover"
+                      loading="lazy"
+                      decoding="async"
                     />
                     <div className="p-6">
                       <p className="font-mono text-[0.68rem] tracking-widest text-primary uppercase">
@@ -80,7 +81,7 @@ export function ChallengePage() {
                 ))}
               </div>
             ) : (
-              <div className="rounded-xl hairline bg-background p-12 text-center">
+              <div className="rounded-md bg-background p-8 text-center">
                 <h3 className="text-lg font-semibold text-foreground">{CHALLENGE.emptyTitle}</h3>
                 <p className="mt-3 max-w-md mx-auto text-sm text-dim">{CHALLENGE.emptyBody}</p>
               </div>
@@ -91,7 +92,7 @@ export function ChallengePage() {
 
       <section>
         <div className="mx-auto max-w-6xl px-5 py-20">
-          <div className="rounded-2xl surface-card p-8 sm:p-12">
+          <div className="rounded-md bg-surface p-8 sm:p-12">
             <h2 className="max-w-xl text-2xl font-semibold text-foreground sm:text-3xl">
               Take part in the next challenge
             </h2>

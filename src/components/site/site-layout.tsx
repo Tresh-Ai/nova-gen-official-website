@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 import { useState, type ReactNode } from "react";
 
-import { CHANNELS, CHALLENGE, LOGO, NAV, PARTNERSHIPS, SITE } from "@/content/nova-gen";
+import { LOGO, NAV, SITE } from "@/content/nova-gen";
 import { cn } from "@/lib/utils";
 
 export function Wordmark({ className }: { className?: string }) {
@@ -59,7 +59,7 @@ export function SiteHeader() {
             onClick={() => setOpen((v) => !v)}
             aria-expanded={open}
             aria-label={open ? "Close menu" : "Open menu"}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-md hairline text-foreground md:hidden"
+            className="inline-flex h-10 w-10 items-center justify-center text-foreground md:hidden"
           >
             {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
           </button>
@@ -98,7 +98,7 @@ export function SiteHeader() {
 export function SiteFooter() {
   return (
     <footer className="mt-24 border-t border-line bg-surface">
-      <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 md:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1.2fr]">
+      <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 md:grid-cols-[1.5fr_1fr_1fr]">
         <div>
           <Wordmark />
           <p className="mt-4 max-w-sm text-sm text-dim">{SITE.description}</p>
@@ -148,15 +148,6 @@ export function SiteFooter() {
           </ul>
         </div>
 
-        <div>
-          <p className="eyebrow">Community</p>
-          <ul className="mt-4 space-y-2 text-sm text-dim">
-            <li>{CHANNELS.length} community spaces</li>
-            <li>Bi-weekly challenges · next deadline {CHALLENGE.cadence}</li>
-            <li>{PARTNERSHIPS.lead.title}</li>
-            <li className="font-mono text-[0.68rem] tracking-widest uppercase">{SITE.whatsapp}</li>
-          </ul>
-        </div>
       </div>
 
       <div className="border-t border-line">
@@ -213,12 +204,8 @@ export function PageHero({
   children?: ReactNode;
 }) {
   return (
-    <section className="relative overflow-hidden border-b border-line">
-      <div
-        aria-hidden
-        className="pointer-events-none absolute -top-40 left-1/2 h-[26rem] w-[52rem] -translate-x-1/2 rounded-full bg-primary/10 blur-[120px]"
-      />
-      <div className="relative mx-auto max-w-6xl px-5 py-20 sm:py-28">
+    <section className="border-b border-line">
+      <div className="mx-auto max-w-6xl px-5 py-20 sm:py-28">
         <p className="eyebrow rise">{eyebrow}</p>
         <h1 className="mt-4 max-w-3xl text-4xl leading-[1.05] font-semibold text-foreground sm:text-6xl">
           {title}

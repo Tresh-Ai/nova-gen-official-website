@@ -159,32 +159,27 @@ export const VALUES = [
 export const MOMENTS = [
   {
     src: EVENT_04,
-    caption: "Members with lanyards and Nova Gen totes at an indoor expo booth.",
-    meta: "Expo day",
+    alt: "Nova Gen members with lanyards and community totes at an expo booth.",
     wide: true,
   },
   {
     src: EVENT_05,
-    caption: "In front of the AWS Student Builder Group backdrop at Lagos State University.",
-    meta: "Campus",
+    alt: "Nova Gen members at the AWS Student Builder Group backdrop at Lagos State University.",
     wide: true,
   },
   {
     src: GATHERING_01,
-    caption: "Five members at a web3 milestone session, 20 Years of Bringing Africa On-Chain.",
-    meta: "On the floor",
+    alt: "Members at the 20 Years of Bringing Africa On-Chain session.",
     wide: false,
   },
   {
     src: GATHERING_02,
-    caption: "Handing out community flyers between sessions.",
-    meta: "Outreach",
+    alt: "Nova Gen members sharing community flyers between sessions.",
     wide: false,
   },
   {
     src: GATHERING_03,
-    caption: "The group in front of the adoption timeline banner.",
-    meta: "Together",
+    alt: "Nova Gen members in front of an adoption timeline banner.",
     wide: false,
   },
 ] as const;
@@ -219,7 +214,7 @@ export const TEAM = [
 
 export const CHALLENGE = {
   code: "Task 03-04",
-  title: "Farm to Future — The Scenario",
+  title: "Farm to Future: The Scenario",
   deadline: "Saturday 14th Nov 2026",
   cadence: "Every two weeks",
   heroTitle: "A clear rhythm for building together.",
@@ -255,16 +250,15 @@ export const CHALLENGE = {
   entries: [
     {
       code: "Task 03-04",
-      status: "Open now",
-      title: "Farm to Future — The Scenario",
+      status: "Past challenge",
+      title: "Farm to Future: The Scenario",
       deadline: "Saturday 14th Nov 2026",
-      brief: "Farm to Future — The Scenario",
+      brief: "Farm to Future: The Scenario",
       image: CHALLENGE_ART,
     },
   ],
   archiveTitle: "Challenge archive",
-  archiveIntro:
-    "Current and past briefs are listed here. Open a challenge to read its details.",
+  archiveIntro: "Past briefs are collected here for reference.",
   emptyTitle: "No challenges listed yet",
   emptyBody: "When a challenge is ready, it will be added here. The challenge rhythm stays the same every two weeks.",
   detailLabels: {

@@ -42,3 +42,8 @@ Keep all site copy, nav, and asset URLs in `src/content/nova-gen.ts`, page compo
 footer render from `src/routes/__root.tsx` through `SiteLayout`. Why: copy and branding stay
 editable in one place instead of being duplicated across pages.
 
+## Hosting and static assets
+
+Let TanStack Start handle page routing and serve files from `public/` directly; do not add a
+catch-all Vercel rewrite. Why: broad HTML fallbacks can misroute static image requests.
+
