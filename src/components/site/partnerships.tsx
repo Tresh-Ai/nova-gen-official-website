@@ -27,17 +27,17 @@ export function PartnershipsPage() {
         <div className="mx-auto max-w-6xl px-5 py-20">
           <SectionHeading
             eyebrow="Areas we're open to"
-            title="Four ways a partnership could look"
+            title="Ways a partnership could look"
             intro="These are areas Nova Gen is open to exploring with partners — not programmes already in place."
           />
           <div className="mt-12 grid gap-4 sm:grid-cols-2">
-            {PARTNERSHIPS.pillars.map((pillar, i) => (
-              <div key={pillar.title} className="rounded-xl surface-card p-7">
+            {PARTNERSHIPS.areas.map((area, i) => (
+              <div key={area.title} className="rounded-xl surface-card p-7">
                 <span className="font-mono text-xs tracking-widest text-primary">
                   {String(i + 1).padStart(2, "0")}
                 </span>
-                <h3 className="mt-4 text-lg font-semibold text-foreground">{pillar.title}</h3>
-                <p className="mt-2 text-sm text-dim">{pillar.body}</p>
+                <h3 className="mt-4 text-lg font-semibold text-foreground">{area.title}</h3>
+                <p className="mt-2 text-sm text-dim">{area.body}</p>
               </div>
             ))}
           </div>
