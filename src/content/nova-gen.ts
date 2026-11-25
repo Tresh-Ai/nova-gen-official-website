@@ -219,6 +219,8 @@ export const TEAM = [
 
 export const CHALLENGE = {
   code: "Task 03-04",
+  title: "Farm to Future — The Scenario",
+  deadline: "Saturday 14th Nov 2026",
   cadence: "Every two weeks",
   heroTitle: "A clear rhythm for building together.",
   heroBody:
@@ -250,7 +252,16 @@ export const CHALLENGE = {
       body: "The community comes together to share the work on the Nova Gen X account.",
     },
   ],
-  entries: [],
+  entries: [
+    {
+      code: "Task 03-04",
+      status: "Open now",
+      title: "Farm to Future — The Scenario",
+      deadline: "Saturday 14th Nov 2026",
+      brief: "Farm to Future — The Scenario",
+      image: CHALLENGE_ART,
+    },
+  ],
   archiveTitle: "Challenge archive",
   archiveIntro:
     "Current and past briefs are listed here. Open a challenge to read its details.",

@@ -58,15 +58,25 @@ export function ChallengePage() {
             {CHALLENGE.entries.length > 0 ? (
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
                 {CHALLENGE.entries.map((entry) => (
-                  <div key={entry.code} className="rounded-xl hairline bg-background p-6">
-                    <p className="font-mono text-[0.68rem] tracking-widest text-primary uppercase">
-                      {entry.status}
-                    </p>
-                    <h3 className="mt-3 text-lg font-semibold text-foreground">
-                      {entry.code}: {entry.title}
-                    </h3>
-                    <p className="mt-2 text-sm text-dim">{entry.brief}</p>
-                  </div>
+                  <article key={entry.code} className="overflow-hidden rounded-xl hairline bg-background">
+                    <img
+                      src={entry.image}
+                      alt={`${entry.code} challenge artwork`}
+                      className="aspect-[16/9] w-full object-cover"
+                    />
+                    <div className="p-6">
+                      <p className="font-mono text-[0.68rem] tracking-widest text-primary uppercase">
+                        {entry.status}
+                      </p>
+                      <h3 className="mt-3 text-lg font-semibold text-foreground">
+                        {entry.code}: {entry.title}
+                      </h3>
+                      <p className="mt-2 text-sm text-dim">{entry.brief}</p>
+                      <p className="mt-5 border-t border-line pt-4 font-mono text-[0.68rem] tracking-widest text-dim uppercase">
+                        Deadline · {entry.deadline}
+                      </p>
+                    </div>
+                  </article>
                 ))}
               </div>
             ) : (
