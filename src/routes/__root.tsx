@@ -85,13 +85,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "Nova Gen" },
       {
         name: "description",
-        content: "Nova Gen — a self-driven African technology community.",
+        content: "Nova Gen: a self-driven African technology community.",
       },
       { name: "author", content: "Nova Gen" },
       { property: "og:title", content: "Nova Gen" },
       {
         property: "og:description",
-        content: "Nova Gen — a self-driven African technology community.",
+        content: "Nova Gen: a self-driven African technology community.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

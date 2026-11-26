@@ -5,7 +5,7 @@ import { PartnershipsPage } from "@/components/site/partnerships";
 export const Route = createFileRoute("/partnerships")({
   head: () => ({
     meta: [
-      { title: "Partnerships — Nova Gen" },
+      { title: "Partnerships | Nova Gen" },
       {
         name: "description",
         content:

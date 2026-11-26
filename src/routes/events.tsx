@@ -5,7 +5,7 @@ import { EventsPage } from "@/components/site/events";
 export const Route = createFileRoute("/events")({
   head: () => ({
     meta: [
-      { title: "Events — Nova Gen" },
+      { title: "Events | Nova Gen" },
       {
         name: "description",
         content:
@@ -15,7 +15,7 @@ export const Route = createFileRoute("/events")({
       {
         property: "og:description",
         content:
-          "Expos, campus days, and partner sessions — how the Nova Gen community gathers online and in person.",
+          "Expos, campus days, and partner sessions, online and in person.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },

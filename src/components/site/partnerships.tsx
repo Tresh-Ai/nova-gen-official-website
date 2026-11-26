@@ -10,13 +10,13 @@ export function PartnershipsPage() {
       <PageHero
         eyebrow="Partnerships"
         title="Work with a community that already builds."
-        body="Nova Gen works with partners who want to reach African technologists where the work is actually happening — in the challenge threads, the reviews, and the build rooms."
+        body="Nova Gen works with partners who want to connect with African technologists through community sessions, project reviews, and shared build spaces."
       >
         <a
           href={SITE.xUrl}
           target="_blank"
           rel="noreferrer"
-          className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:brightness-110"
+          className="inline-flex items-center gap-2 rounded-sm bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:brightness-110"
         >
           Start a conversation
           <ArrowUpRight className="h-4 w-4" />
@@ -28,15 +28,12 @@ export function PartnershipsPage() {
           <SectionHeading
             eyebrow="Areas we're open to"
             title="Ways a partnership could look"
-            intro="These are areas Nova Gen is open to exploring with partners — not programmes already in place."
+            intro="These are areas Nova Gen is open to exploring with partners. They are not programmes already in place."
           />
-          <div className="mt-12 grid gap-4 sm:grid-cols-2">
-            {PARTNERSHIPS.areas.map((area, i) => (
-              <div key={area.title} className="rounded-xl surface-card p-7">
-                <span className="font-mono text-xs tracking-widest text-primary">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <h3 className="mt-4 text-lg font-semibold text-foreground">{area.title}</h3>
+          <div className="mt-12 grid gap-x-10 gap-y-8 sm:grid-cols-2">
+            {PARTNERSHIPS.areas.map((area) => (
+              <div key={area.title} className="border-t border-line pt-5">
+                <h3 className="text-lg font-semibold text-foreground">{area.title}</h3>
                 <p className="mt-2 text-sm text-dim">{area.body}</p>
               </div>
             ))}
@@ -47,28 +44,11 @@ export function PartnershipsPage() {
 
       <section className="border-b border-line bg-surface">
         <div className="mx-auto max-w-6xl px-5 py-20">
-          <SectionHeading
-            eyebrow="Work already done"
-            title={PARTNERSHIPS.lead.title}
-            intro={PARTNERSHIPS.lead.body}
-          />
-          <div className="mt-10 grid gap-4 sm:grid-cols-3">
-            <div className="rounded-xl hairline bg-background p-6">
-              <p className="font-mono text-[0.68rem] tracking-widest text-dim uppercase">
-                Collaborator
-              </p>
-              <p className="mt-3 text-sm text-foreground">Harness</p>
-            </div>
-            <div className="rounded-xl hairline bg-background p-6">
-              <p className="font-mono text-[0.68rem] tracking-widest text-dim uppercase">
-                Through
-              </p>
-              <p className="mt-3 text-sm text-foreground">ARISE</p>
-            </div>
-            <div className="rounded-xl hairline bg-background p-6">
-              <p className="font-mono text-[0.68rem] tracking-widest text-dim uppercase">Host</p>
-              <p className="mt-3 text-sm text-foreground">Nonye Victory</p>
-            </div>
+          <div className="max-w-3xl">
+            <p className="eyebrow">Previous collaboration</p>
+            <h2 className="mt-3 text-2xl font-semibold text-foreground">{PARTNERSHIPS.lead.title}</h2>
+            <p className="mt-4 text-base text-dim">{PARTNERSHIPS.lead.body}</p>
+            <p className="mt-4 text-sm text-dim">Hosted by Nonye Victory, with Harness through ARISE.</p>
           </div>
         </div>
       </section>
@@ -76,20 +56,20 @@ export function PartnershipsPage() {
       <section className="border-b border-line">
         <div className="mx-auto max-w-6xl px-5 py-20">
           <SectionHeading
-            eyebrow="In the room"
-            title="Where the community already shows up"
-            intro="Expos, campus days, and ecosystem sessions — the same rooms partners are already in."
+            eyebrow="Community moments"
+            title="Members at community events"
+            intro="Photos of Nova Gen members at community and technology gatherings."
           />
           <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {MOMENTS.slice(0, 3).map((item) => (
-              <figure key={item.src} className="overflow-hidden rounded-xl surface-card">
+              <figure key={item.src} className="overflow-hidden rounded-md">
                 <img
                   src={item.src}
-                  alt={item.caption}
-                  className="h-56 w-full object-cover"
+                  alt={item.alt}
+                  className="aspect-[3/2] w-full object-cover"
                   loading="lazy"
+                  decoding="async"
                 />
-                <figcaption className="p-4 text-sm text-dim">{item.caption}</figcaption>
               </figure>
             ))}
           </div>
@@ -98,27 +78,27 @@ export function PartnershipsPage() {
 
       <section>
         <div className="mx-auto max-w-6xl px-5 py-20">
-          <div className="rounded-2xl bg-primary p-8 sm:p-12">
+          <div className="bg-primary p-8 sm:p-12">
             <h2 className="max-w-2xl text-2xl font-semibold text-primary-foreground sm:text-4xl">
               Tell us what you have in mind
             </h2>
             <p className="mt-4 max-w-xl text-sm text-primary-foreground/80">
-              Sessions, sponsored challenges, talent pipelines, or joint events — reach the team
-              directly and we'll take it from there.
+              Sessions, sponsored challenges, talent opportunities, or joint events. Reach the
+              team to start a conversation.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a
                 href={SITE.xUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-full bg-background px-5 py-2.5 text-sm font-semibold text-foreground transition hover:bg-surface-2"
+                className="inline-flex items-center gap-2 rounded-sm bg-background px-5 py-2.5 text-sm font-semibold text-foreground transition hover:bg-surface-2"
               >
                 Message {SITE.xHandle} on X
                 <ArrowUpRight className="h-4 w-4" />
               </a>
               <Link
                 to="/events"
-                className="inline-flex items-center gap-2 rounded-full border border-primary-foreground/25 px-5 py-2.5 text-sm font-medium text-primary-foreground transition hover:bg-primary-foreground/10"
+                className="inline-flex items-center gap-2 rounded-sm border border-primary-foreground/25 px-5 py-2.5 text-sm font-medium text-primary-foreground transition hover:bg-primary-foreground/10"
               >
                 See community events
                 <ArrowRight className="h-4 w-4" />

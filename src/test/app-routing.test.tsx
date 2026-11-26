@@ -39,17 +39,17 @@ describe("Community facts shown on the site", () => {
 
   it("keeps the open challenge deadline as published", () => {
     expect(CHALLENGE.code).toBe("Task 03-04");
-    expect(CHALLENGE.title).toBe("Farm to Future — The Scenario");
+    expect(CHALLENGE.title).toBe("Farm to Future: The Scenario");
     expect(CHALLENGE.deadline).toBe("Saturday 14th Nov 2026");
   });
 
   it("lists the confirmed team with their agreed titles", () => {
-    const titles = TEAM.map((member) => `${member.name} — ${member.role}`);
+    const titles = TEAM.map((member) => `${member.name}: ${member.role}`);
 
-    expect(titles).toContain("Tomiwa Sanni — Founder & Community Lead");
-    expect(titles).toContain("Angel Batubo — Second Community Lead");
-    expect(titles).toContain("Awoyale Olamilekan (Laycon) — Community Manager");
-    expect(titles).toContain("Valian Sajoh — Community Moderator");
-    expect(titles).toContain("Sunday Esther (Essy) — Community Moderator");
+    expect(titles).toContain("Tomiwa Sanni: Founder & Community Lead");
+    expect(titles).toContain("Angel Batubo: Second Community Lead");
+    expect(titles).toContain("Awoyale Olamilekan (Laycon): Community Manager");
+    expect(titles).toContain("Valian Sajoh: Community Moderator");
+    expect(titles).toContain("Sunday Esther (Essy): Community Moderator");
   });
 });

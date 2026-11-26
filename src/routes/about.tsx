@@ -5,7 +5,7 @@ import { AboutPage } from "@/components/site/about";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — Nova Gen" },
+      { title: "About | Nova Gen" },
       {
         name: "description",
         content:

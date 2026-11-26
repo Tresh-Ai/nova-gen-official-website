@@ -16,7 +16,7 @@ export function JoinPage() {
           href={JOIN.formUrl}
           target="_blank"
           rel="noreferrer"
-          className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:brightness-110"
+          className="inline-flex items-center gap-2 rounded-sm bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:brightness-110"
         >
           Open the application form
           <ArrowUpRight className="h-4 w-4" />
@@ -32,7 +32,7 @@ export function JoinPage() {
           />
           <ol className="mt-12 grid gap-4 lg:grid-cols-3">
             {JOIN.steps.map((step, i) => (
-              <li key={step.title} className="rounded-xl surface-card p-7">
+              <li key={step.title} className="rounded-md bg-surface p-7">
                 <span className="font-mono text-xs tracking-widest text-primary">
                   {String(i + 1).padStart(2, "0")}
                 </span>
@@ -59,7 +59,7 @@ export function JoinPage() {
               href={JOIN.formUrl}
               target="_blank"
               rel="noreferrer"
-              className="mt-8 inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:brightness-110"
+              className="mt-8 inline-flex items-center gap-2 rounded-sm bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:brightness-110"
             >
               Apply on the form
               <ArrowUpRight className="h-4 w-4" />
@@ -68,7 +68,7 @@ export function JoinPage() {
               Opens in a new tab
             </p>
           </div>
-          <div className="rounded-2xl hairline bg-background p-8">
+          <div className="bg-background p-8">
             <p className="eyebrow">After you're in</p>
             <ul className="mt-5 space-y-3 text-sm">
               {CHANNELS.slice(0, 5).map((channel) => (
@@ -76,7 +76,7 @@ export function JoinPage() {
                   <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
                   <span>
                     <span className="font-medium text-foreground">{channel.name}</span>
-                    <span className="text-dim"> — {channel.body}</span>
+                    <span className="text-dim"> · {channel.body}</span>
                   </span>
                 </li>
               ))}
@@ -92,9 +92,9 @@ export function JoinPage() {
             title="Builders, learners, and people with work to show"
             intro="Developers, designers, product people, analysts, AI/ML builders, no-code creators, founders, and creatives."
           />
-          <div className="mt-12 grid gap-px overflow-hidden rounded-2xl hairline bg-line sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid gap-x-8 gap-y-7 sm:grid-cols-2 lg:grid-cols-4">
             {VALUES.map((item) => (
-              <div key={item.title} className="bg-surface p-6">
+              <div key={item.title} className="border-t border-line pt-5">
                 <h3 className="text-base font-semibold text-foreground">{item.title}</h3>
                 <p className="mt-2 text-sm text-dim">{item.body}</p>
               </div>
@@ -105,7 +105,7 @@ export function JoinPage() {
 
       <section>
         <div className="mx-auto max-w-6xl px-5 py-20">
-          <div className="rounded-2xl surface-card p-8 sm:p-12">
+          <div className="rounded-md bg-surface p-8 sm:p-12">
             <h2 className="max-w-xl text-2xl font-semibold text-foreground sm:text-3xl">
               Not sure yet? Look around first.
             </h2>
@@ -116,14 +116,14 @@ export function JoinPage() {
             <div className="mt-7 flex flex-wrap gap-3">
               <Link
                 to="/community"
-                className="inline-flex items-center gap-2 rounded-full hairline px-5 py-2.5 text-sm text-foreground transition hover:border-primary/40 hover:text-primary"
+                className="inline-flex items-center gap-2 rounded-sm px-5 py-2.5 text-sm text-foreground transition hover:text-primary"
               >
                 The community spaces
                 <ArrowRight className="h-4 w-4" />
               </Link>
               <Link
                 to="/initiatives/bi-weekly-challenge"
-                className="inline-flex items-center gap-2 rounded-full hairline px-5 py-2.5 text-sm text-foreground transition hover:border-primary/40 hover:text-primary"
+                className="inline-flex items-center gap-2 rounded-sm px-5 py-2.5 text-sm text-foreground transition hover:text-primary"
               >
                 The bi-weekly challenge
                 <ArrowRight className="h-4 w-4" />
@@ -132,7 +132,7 @@ export function JoinPage() {
                 href={SITE.tallyUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition hover:brightness-110"
+                className="inline-flex items-center gap-2 rounded-sm bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition hover:brightness-110"
               >
                 Apply now
                 <ArrowUpRight className="h-4 w-4" />

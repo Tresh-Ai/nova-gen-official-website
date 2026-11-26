@@ -5,13 +5,13 @@ import { HomePage } from "@/components/site/home";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Nova Gen — A self-driven African technology community" },
+      { title: "Nova Gen | African technology community" },
       {
         name: "description",
         content:
           "Nova Gen is a self-driven African technology community. Members ship a bi-weekly challenge, review each other's work, and move opportunities through the group.",
       },
-      { property: "og:title", content: "Nova Gen — The Next Generation Starts Here" },
+      { property: "og:title", content: "Nova Gen | The Next Generation Starts Here" },
       {
         property: "og:description",
         content:

@@ -5,7 +5,7 @@ import { JoinPage } from "@/components/site/join";
 export const Route = createFileRoute("/join")({
   head: () => ({
     meta: [
-      { title: "Join — Nova Gen" },
+      { title: "Join | Nova Gen" },
       {
         name: "description",
         content:

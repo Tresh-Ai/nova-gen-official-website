@@ -32,7 +32,7 @@ export function EventsPage() {
           href={SITE.tallyUrl}
           target="_blank"
           rel="noreferrer"
-          className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:brightness-110"
+          className="inline-flex items-center gap-2 rounded-sm bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:brightness-110"
         >
           Apply to join
           <ArrowUpRight className="h-4 w-4" />
@@ -44,7 +44,7 @@ export function EventsPage() {
           <SectionHeading
             eyebrow="Formats"
             title="How the community gathers"
-            intro="Members take part however they can — online, in the room, or both."
+            intro="Members take part online, in person, or both."
           />
           <div className="mt-12 grid gap-4 lg:grid-cols-3">
             {FORMATS.map((item) => (
@@ -59,39 +59,34 @@ export function EventsPage() {
 
       <section className="border-b border-line bg-surface">
         <div className="mx-auto max-w-6xl px-5 py-20">
-          <SectionHeading
-            eyebrow="Case study"
-            title={PARTNERSHIPS.lead.title}
-            intro={PARTNERSHIPS.lead.body}
-          />
-          <div className="mt-10 grid gap-4 sm:grid-cols-3">
-            <div className="rounded-xl hairline bg-background p-6">
-              <p className="font-mono text-[0.68rem] tracking-widest text-dim uppercase">Format</p>
-              <p className="mt-3 text-sm text-foreground">Working session with a partner</p>
-            </div>
-            <div className="rounded-xl hairline bg-background p-6">
-              <p className="font-mono text-[0.68rem] tracking-widest text-dim uppercase">
-                Delivered through
-              </p>
-              <p className="mt-3 text-sm text-foreground">ARISE, with Harness</p>
-            </div>
-            <div className="rounded-xl hairline bg-background p-6">
-              <p className="font-mono text-[0.68rem] tracking-widest text-dim uppercase">Host</p>
-              <p className="mt-3 text-sm text-foreground">Nonye Victory</p>
-            </div>
+          <div className="max-w-3xl">
+            <p className="eyebrow">Previous collaboration</p>
+            <h2 className="mt-3 text-2xl font-semibold text-foreground">{PARTNERSHIPS.lead.title}</h2>
+            <p className="mt-4 text-base text-dim">{PARTNERSHIPS.lead.body}</p>
+            <dl className="mt-7 grid gap-5 text-sm sm:grid-cols-3">
+              <div>
+                <dt className="font-mono text-[0.68rem] tracking-widest text-dim uppercase">Format</dt>
+                <dd className="mt-2 text-foreground">Online conference</dd>
+              </div>
+              <div>
+                <dt className="font-mono text-[0.68rem] tracking-widest text-dim uppercase">Collaborator</dt>
+                <dd className="mt-2 text-foreground">Honest, through ARISE</dd>
+              </div>
+              <div>
+                <dt className="font-mono text-[0.68rem] tracking-widest text-dim uppercase">Host</dt>
+                <dd className="mt-2 text-foreground">Nonye Victory</dd>
+              </div>
+            </dl>
           </div>
-          <p className="mt-8 max-w-2xl text-sm text-dim">
-            More sessions are added here as they are confirmed with partners.
-          </p>
         </div>
       </section>
 
       <section className="border-b border-line">
         <div className="mx-auto max-w-6xl px-5 py-20">
           <SectionHeading
-            eyebrow="On the ground"
-            title="Members at recent events"
-            intro="Photos from the expos, campus days, and sessions the community has attended."
+            eyebrow="Community moments"
+            title="Community events in pictures"
+            intro="Photos of Nova Gen members at community and technology gatherings."
           />
           <MomentGallery />
         </div>
@@ -99,7 +94,7 @@ export function EventsPage() {
 
       <section>
         <div className="mx-auto max-w-6xl px-5 py-20">
-          <div className="rounded-2xl surface-card p-8 sm:p-12">
+          <div className="rounded-md bg-surface p-8 sm:p-12">
             <h2 className="max-w-xl text-2xl font-semibold text-foreground sm:text-3xl">
               Run a session with the community
             </h2>
@@ -110,7 +105,7 @@ export function EventsPage() {
             <div className="mt-7 flex flex-wrap gap-3">
               <Link
                 to="/partnerships"
-                className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition hover:brightness-110"
+                className="inline-flex items-center gap-2 rounded-sm bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition hover:brightness-110"
               >
                 Partnership areas
                 <ArrowRight className="h-4 w-4" />
@@ -119,7 +114,7 @@ export function EventsPage() {
                 href={SITE.xUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-full hairline px-5 py-2.5 text-sm text-foreground transition hover:border-primary/40 hover:text-primary"
+                className="inline-flex items-center gap-2 rounded-sm px-5 py-2.5 text-sm text-foreground transition hover:text-primary"
               >
                 Message {SITE.xHandle}
                 <ArrowUpRight className="h-4 w-4" />
