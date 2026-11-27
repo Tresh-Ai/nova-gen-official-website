@@ -169,31 +169,31 @@
       "name": "Tomiwa Sanni",
       "role": "Founder & Community Lead",
       "body": "Sets the direction of Nova Gen and leads the community.",
-      "image": null
+      "image": "/images/team/tomiwa.webp"
     },
     {
       "name": "Angel Batubo",
       "role": "Second Community Lead",
       "body": "Leads community work alongside the founder.",
-      "image": null
+      "image": "/images/team/angel.webp"
     },
     {
       "name": "Awoyale Olamilekan (Laycon)",
       "role": "Community Manager",
       "body": "Manages the day-to-day life of the community spaces.",
-      "image": null
+      "image": "/images/team/laycon.webp"
     },
     {
       "name": "Valian Sajoh",
       "role": "Community Moderator",
       "body": "Helps keep discussions useful and members supported.",
-      "image": null
+      "image": "/images/team/valian.webp"
     },
     {
       "name": "Sunday Esther (Essy)",
       "role": "Community Moderator",
       "body": "Helps keep discussions useful and members supported.",
-      "image": null
+      "image": "/images/team/esther.webp"
     }
   ],
   "challenge": {
