@@ -1,24 +1,8 @@
-/*
- * Tailwind v4 entry: config lives here, with no tailwind.config.js or PostCSS plugin.
- * - Keep every @import in this top block, above @theme and the rest of the file. Install an
- *   npm package before @importing its CSS. Never @import a remote URL (web fonts, CDN CSS): the
- *   build resolves @import from the filesystem. Load those with a <link> in the head() of
- *   src/routes/__root.tsx and name the family in a --font-* token in @theme inline below.
- */
 @import "tailwindcss" source(none);
 @source "../src";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
-
-/*
- * Nova Gen design system.
- *
- * Obsidian surfaces, hairline emerald rules, and one accent: the brand green #02D64D
- * (oklch(0.7631 0.2284 146.69)). Every color below is oklch.
- *
- * The @theme inline block maps CSS custom properties to Tailwind utility classes.
- */
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
@@ -61,97 +45,60 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
-
-  /* Nova Gen semantic tokens */
   --color-surface: var(--surface);
   --color-surface-2: var(--surface-2);
   --color-line: var(--line);
   --color-dim: var(--dim);
-  --font-display: "Space Grotesk", "DM Sans", ui-sans-serif, sans-serif;
+  --color-ink: var(--ink);
+  --color-paper: var(--paper);
+  --color-coral: var(--coral);
+  --font-display: "Instrument Serif", Georgia, serif;
   --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", monospace;
 }
 
 :root {
-  --radius: 0.625rem;
-  --background: oklch(0.1294 0.0071 174.69);
-  --foreground: oklch(0.9668 0.0062 137.77);
-  --card: oklch(0.1724 0.0148 162.64);
-  --card-foreground: oklch(0.9668 0.0062 137.77);
-  --popover: oklch(0.1905 0.0145 162.96);
-  --popover-foreground: oklch(0.9668 0.0062 137.77);
+  color-scheme: light;
+  --radius: 0.5rem;
+  --background: oklch(0.978 0.008 92);
+  --foreground: oklch(0.19 0.012 155);
+  --card: oklch(0.997 0.004 92);
+  --card-foreground: oklch(0.19 0.012 155);
+  --popover: oklch(0.997 0.004 92);
+  --popover-foreground: oklch(0.19 0.012 155);
   --primary: oklch(0.7631 0.2284 146.69);
-  --primary-foreground: oklch(0.18 0.03 152);
-  --secondary: oklch(0.1905 0.0145 162.96);
-  --secondary-foreground: oklch(0.9668 0.0062 137.77);
-  --muted: oklch(0.1905 0.0145 162.96);
-  --muted-foreground: oklch(0.6705 0.0233 158.31);
-  --accent: oklch(0.2257 0.0206 162.45);
-  --accent-foreground: oklch(0.9668 0.0062 137.77);
-  --destructive: oklch(0.577 0.245 27.325);
-  --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.92 0 0 / 12%);
-  --input: oklch(0.92 0 0 / 18%);
+  --primary-foreground: oklch(0.19 0.04 150);
+  --secondary: oklch(0.934 0.028 25);
+  --secondary-foreground: oklch(0.3 0.045 25);
+  --muted: oklch(0.95 0.009 92);
+  --muted-foreground: oklch(0.48 0.018 155);
+  --accent: oklch(0.93 0.045 148);
+  --accent-foreground: oklch(0.24 0.05 150);
+  --destructive: oklch(0.58 0.2 27);
+  --destructive-foreground: oklch(0.99 0.004 90);
+  --border: oklch(0.88 0.015 92);
+  --input: oklch(0.88 0.015 92);
   --ring: oklch(0.7631 0.2284 146.69);
   --chart-1: oklch(0.7631 0.2284 146.69);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.1537 0.0078 163.92);
-  --sidebar-foreground: oklch(0.9668 0.0062 137.77);
+  --chart-2: oklch(0.66 0.17 25);
+  --chart-3: oklch(0.52 0.08 200);
+  --chart-4: oklch(0.68 0.12 85);
+  --chart-5: oklch(0.48 0.12 290);
+  --sidebar: oklch(0.97 0.008 92);
+  --sidebar-foreground: oklch(0.19 0.012 155);
   --sidebar-primary: oklch(0.7631 0.2284 146.69);
-  --sidebar-primary-foreground: oklch(0.18 0.03 152);
-  --sidebar-accent: oklch(0.2257 0.0206 162.45);
-  --sidebar-accent-foreground: oklch(0.9668 0.0062 137.77);
-  --sidebar-border: oklch(0.92 0 0 / 12%);
+  --sidebar-primary-foreground: oklch(0.19 0.04 150);
+  --sidebar-accent: oklch(0.93 0.045 148);
+  --sidebar-accent-foreground: oklch(0.24 0.05 150);
+  --sidebar-border: oklch(0.88 0.015 92);
   --sidebar-ring: oklch(0.7631 0.2284 146.69);
-
-  /* Nova Gen surfaces */
-  --surface: oklch(0.1724 0.0148 162.64);
-  --surface-2: oklch(0.2257 0.0206 162.45);
-  --line: oklch(0.92 0 0 / 10%);
-  --dim: oklch(0.6705 0.0233 158.31);
-}
-
-.dark {
-  --background: oklch(0.1294 0.0071 174.69);
-  --foreground: oklch(0.9668 0.0062 137.77);
-  --card: oklch(0.1724 0.0148 162.64);
-  --card-foreground: oklch(0.9668 0.0062 137.77);
-  --popover: oklch(0.1905 0.0145 162.96);
-  --popover-foreground: oklch(0.9668 0.0062 137.77);
-  --primary: oklch(0.7631 0.2284 146.69);
-  --primary-foreground: oklch(0.18 0.03 152);
-  --secondary: oklch(0.1905 0.0145 162.96);
-  --secondary-foreground: oklch(0.9668 0.0062 137.77);
-  --muted: oklch(0.1905 0.0145 162.96);
-  --muted-foreground: oklch(0.6705 0.0233 158.31);
-  --accent: oklch(0.2257 0.0206 162.45);
-  --accent-foreground: oklch(0.9668 0.0062 137.77);
-  --destructive: oklch(0.704 0.191 22.216);
-  --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.92 0 0 / 12%);
-  --input: oklch(0.92 0 0 / 18%);
-  --ring: oklch(0.7631 0.2284 146.69);
-  --chart-1: oklch(0.7631 0.2284 146.69);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.1537 0.0078 163.92);
-  --sidebar-foreground: oklch(0.9668 0.0062 137.77);
-  --sidebar-primary: oklch(0.7631 0.2284 146.69);
-  --sidebar-primary-foreground: oklch(0.18 0.03 152);
-  --sidebar-accent: oklch(0.2257 0.0206 162.45);
-  --sidebar-accent-foreground: oklch(0.9668 0.0062 137.77);
-  --sidebar-border: oklch(0.92 0 0 / 12%);
-  --sidebar-ring: oklch(0.7631 0.2284 146.69);
-
-  --surface: oklch(0.1724 0.0148 162.64);
-  --surface-2: oklch(0.2257 0.0206 162.45);
-  --line: oklch(0.92 0 0 / 10%);
-  --dim: oklch(0.6705 0.0233 158.31);
+  --surface: oklch(0.997 0.004 92);
+  --surface-2: oklch(0.95 0.009 92);
+  --line: oklch(0.88 0.015 92);
+  --dim: oklch(0.48 0.018 155);
+  --ink: oklch(0.19 0.012 155);
+  --paper: oklch(0.978 0.008 92);
+  --coral: oklch(0.66 0.17 25);
 }
 
 @layer base {
@@ -159,8 +106,12 @@
     border-color: var(--color-border);
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
-    background-color: var(--color-background);
+    background: var(--color-background);
     color: var(--color-foreground);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
@@ -170,26 +121,18 @@
   h2,
   h3,
   h4 {
-    font-family: var(--font-display);
     letter-spacing: 0;
   }
 
   ::selection {
-    background-color: var(--color-primary);
+    background: var(--color-primary);
     color: var(--color-primary-foreground);
   }
 }
 
-@utility rule-line {
-  border-top: 1px solid var(--line);
-}
-
-@utility hairline {
-  border: 1px solid var(--line);
-}
-
-@utility surface-card {
-  background-color: var(--surface);
+@utility dark-band {
+  background: var(--ink);
+  color: var(--paper);
 }
 
 @utility text-dim {
@@ -197,44 +140,21 @@
 }
 
 @utility eyebrow {
+  color: var(--color-primary);
   font-family: var(--font-mono);
   font-size: 0.6875rem;
-  letter-spacing: 0.22em;
+  line-height: 1.5;
   text-transform: uppercase;
-  color: var(--color-primary);
 }
 
-@keyframes ticker {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-@keyframes rise {
-  from {
-    opacity: 0;
-    transform: translateY(14px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.ticker-track {
-  animation: ticker 32s linear infinite;
-}
-
-.rise {
-  animation: rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
+@utility editorial-title {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 0.98;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .ticker-track,
-  .rise {
-    animation: none;
+  html {
+    scroll-behavior: auto;
   }
 }
